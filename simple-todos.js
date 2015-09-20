@@ -1,7 +1,7 @@
 Tasks = new Mongo.Collection("tasks");
 
 if (Meteor.isClient) {
-  // This code only runs on the client
+  // This code only runs on the client - lesson 4 I believe
   Template.body.helpers({
     tasks: function () {
       // Show newest tasks at the top
