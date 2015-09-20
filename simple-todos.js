@@ -5,7 +5,7 @@ if (Meteor.isClient) {
   Template.body.helpers({
     tasks: function () {
       // Show newest tasks at the top
-      return Tasks.find({}, {sort: {createdAt: -1}});
+      return Tasks.find({}, {sort: {createdAt: 1}});
     }
   });
 
